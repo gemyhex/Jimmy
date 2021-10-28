@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AG - Portfolio</title>
+    <link rel="shortcut icon" type="image/jpg" href="logo.png" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"
+      integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div class="page">
+      <div class="loader">
+        <svg
+          id="logo"
+          viewBox="0 0 994 474"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M344.883 57.5C344.883 80.5 335.216 106.833 315.883 136.5C296.549 166.167 273.383 193.333 246.383 218C219.383 242.667 190.716 263.5 160.383 280.5C130.383 297.5 105.216 306 84.8828 306C73.5495 306 64.0495 303.5 56.3828 298.5C48.7161 293.5 44.8828 286.833 44.8828 278.5C44.8828 245.833 74.7162 210.167 134.383 171.5C178.383 142.5 223.549 120.333 269.883 105C270.55 105 271.216 104.833 271.883 104.5C272.883 104.167 273.549 104 273.883 104C274.216 104 274.383 104.333 274.383 105C274.383 107 271.883 109.167 266.883 111.5C126.216 185.833 55.8828 241.833 55.8828 279.5C55.8828 293.167 62.5495 300 75.8828 300C95.2162 300 118.049 291 144.383 273C189.716 242 230.549 203.667 266.883 158C303.549 112 321.883 74.6667 321.883 46C321.883 20.3333 303.549 7.49998 266.883 7.49998C237.549 7.49998 198.883 17.8333 150.883 38.5C115.549 54.1667 82.8828 72.5 52.8828 93.5C23.2161 114.5 8.38281 131 8.38281 143C8.38281 150 12.3828 156 20.3828 161C20.7161 161 20.8828 161.5 20.8828 162.5C20.8828 163.167 19.5495 163.5 16.8828 163.5C14.2161 163.5 10.8828 160.667 6.88281 155C2.88281 149.333 0.882812 144.167 0.882812 139.5C0.882812 123.5 16.7161 104.333 48.3828 82C80.0495 59.6667 116.549 40.5 157.883 24.5C199.216 8.16666 232.883 -1.52588e-05 258.883 -1.52588e-05C316.216 -1.52588e-05 344.883 19.1666 344.883 57.5Z"
+            stroke="white"
+            stroke-width="3"
+          />
+          <path
+            d="M413.254 28.5C413.921 28.5 414.254 29.3333 414.254 31L411.754 45.5C406.754 66.1667 399.087 76.5 388.754 76.5C381.087 76.5 375.087 74.5 370.754 70.5C383.421 61.8333 397.587 47.8333 413.254 28.5ZM387.254 110.5C376.921 128.167 367.087 150.667 357.754 178C348.421 205 343.754 223.667 343.754 234C343.754 244.333 345.921 249.5 350.254 249.5C353.254 249.5 357.087 247.667 361.754 244C366.421 240.333 369.254 238 370.254 237C371.254 236 372.421 235 373.754 234C375.087 234 375.754 234.667 375.754 236C375.754 240 370.921 244.667 361.254 250C351.921 255.667 345.087 258.5 340.754 258.5C328.087 258.5 321.754 249.333 321.754 231C321.754 203.667 331.754 167.167 351.754 121.5C351.754 120.167 352.587 117.667 354.254 114C356.254 110.333 357.754 108 358.754 107C361.087 104.667 364.254 103.5 368.254 103.5C379.921 103.5 386.254 105.833 387.254 110.5Z"
+            stroke="white"
+            stroke-width="3"
+          />
+          <path
+            d="M614.902 137C601.569 173.667 594.902 200 594.902 216C594.902 231.667 597.736 239.5 603.402 239.5C604.402 236.833 605.569 233.167 606.902 228.5C607.902 230.833 608.402 234.333 608.402 239C608.402 247.667 605.736 252 600.402 252C583.069 252 574.402 237 574.402 207C574.402 192.667 576.736 174 581.402 151C573.736 158.667 566.069 168.167 558.402 179.5L532.402 216C518.069 236.333 509.236 246.5 505.902 246.5C494.569 246.5 488.902 244.5 488.902 240.5C488.902 239.5 490.736 231.667 494.402 217C506.069 173.667 511.902 144.167 511.902 128.5C511.902 121.5 509.736 118 505.402 118C493.069 118 476.402 136.167 455.402 172.5C448.069 185.833 439.902 202.5 430.902 222.5C422.236 242.167 417.569 252 416.902 252C413.569 252 410.069 251.167 406.402 249.5C402.736 247.833 400.902 245.833 400.902 243.5C400.902 237.833 406.402 217.833 417.402 183.5C428.402 148.833 433.902 122.833 433.902 105.5C433.902 99.8333 431.569 96.8333 426.902 96.5C422.236 95.8333 419.902 94.8333 419.902 93.5C419.902 90.5 422.402 89 427.402 89C449.736 89 460.902 98.1667 460.902 116.5C460.902 125.833 457.069 141.333 449.402 163L460.902 143.5C470.236 128.167 478.736 117 486.402 110C494.402 103 502.736 99.5 511.402 99.5C511.736 99.5 512.069 99.5 512.402 99.5C527.736 99.5 535.402 109.833 535.402 130.5C535.402 147.167 529.236 173.833 516.902 210.5L585.402 136.5C589.736 133.833 595.736 132.5 603.402 132.5C611.069 132.5 614.902 134 614.902 137Z"
+            stroke="white"
+            stroke-width="3"
+          />
+          <path
+            d="M839.512 137C826.178 173.667 819.512 200 819.512 216C819.512 231.667 822.345 239.5 828.012 239.5C829.012 236.833 830.178 233.167 831.512 228.5C832.512 230.833 833.012 234.333 833.012 239C833.012 247.667 830.345 252 825.012 252C807.678 252 799.012 237 799.012 207C799.012 192.667 801.345 174 806.012 151C798.345 158.667 790.678 168.167 783.012 179.5L757.012 216C742.678 236.333 733.845 246.5 730.512 246.5C719.178 246.5 713.512 244.5 713.512 240.5C713.512 239.5 715.345 231.667 719.012 217C730.678 173.667 736.512 144.167 736.512 128.5C736.512 121.5 734.345 118 730.012 118C717.678 118 701.012 136.167 680.012 172.5C672.678 185.833 664.512 202.5 655.512 222.5C646.845 242.167 642.178 252 641.512 252C638.178 252 634.678 251.167 631.012 249.5C627.345 247.833 625.512 245.833 625.512 243.5C625.512 237.833 631.012 217.833 642.012 183.5C653.012 148.833 658.512 122.833 658.512 105.5C658.512 99.8333 656.178 96.8333 651.512 96.5C646.845 95.8333 644.512 94.8333 644.512 93.5C644.512 90.5 647.012 89 652.012 89C674.345 89 685.512 98.1667 685.512 116.5C685.512 125.833 681.678 141.333 674.012 163L685.512 143.5C694.845 128.167 703.345 117 711.012 110C719.012 103 727.345 99.5 736.012 99.5C736.345 99.5 736.678 99.5 737.012 99.5C752.345 99.5 760.012 109.833 760.012 130.5C760.012 147.167 753.845 173.833 741.512 210.5L810.012 136.5C814.345 133.833 820.345 132.5 828.012 132.5C835.678 132.5 839.512 134 839.512 137Z"
+            stroke="white"
+            stroke-width="3"
+          />
+          <path
+            d="M993.121 142C993.121 174 982.121 216.333 960.121 269C935.454 326.333 905.954 374.833 871.621 414.5C837.288 454.167 807.454 474 782.121 474C760.121 474 749.121 463.167 749.121 441.5C749.121 415.167 767.954 381 805.621 339C844.954 294.667 887.788 259.333 934.121 233C935.788 233 934.121 236 929.121 242C816.454 335.667 760.121 403.333 760.121 445C760.121 461 766.454 469 779.121 469C800.788 469 826.954 448 857.621 406C888.288 364 914.454 316.5 936.121 263.5C958.121 210.833 969.121 169 969.121 138C969.121 126.333 967.121 118.333 963.121 114C918.788 160.333 887.788 199.333 870.121 231C864.454 245 859.454 252 855.121 252C845.121 252 840.121 249.167 840.121 243.5C839.788 240.167 846.454 220.333 860.121 184L874.121 145.5C878.454 132.167 880.954 118.833 881.621 105.5V103.5C881.621 99.8333 881.121 97.6667 880.121 97C879.454 96.3333 877.288 96 873.621 96C870.288 96 868.621 95.1667 868.621 93.5C868.621 90.5 871.288 89 876.621 89C897.954 89 908.621 97 908.621 113C908.621 120.667 898.621 149 878.621 198C890.288 182 907.121 162.167 929.121 138.5C951.454 114.5 965.454 102.5 971.121 102.5C971.121 105.5 969.788 108.167 967.121 110.5C982.121 112.167 990.121 115.5 991.121 120.5C992.454 129.167 993.121 136.333 993.121 142Z"
+            stroke="white"
+            stroke-width="3"
+          />
+        </svg>
+      </div>
+      <div class="wrapper">
+        <div class="side-bar">
+          <div class="logo">
+            <a href="index.html">
+              <svg
+                width="309"
+                height="208"
+                viewBox="0 0 309 208"
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M28.696 196.36H134.68L73.624 28.456L9.4 205H0.184L73.624 3.11199L147.064 205H28.696V196.36ZM297.947 44.008C293.531 32.872 287.291 24.328 279.227 18.376C271.163 12.232 258.587 9.16 241.499 9.16C232.091 9.16 224.027 10.408 217.307 12.904C210.587 15.208 204.539 19.24 199.163 25C193.787 30.76 189.755 39.112 187.067 50.056C184.379 60.808 183.035 74.152 183.035 90.088V118.312C183.035 134.248 184.379 147.688 187.067 158.632C189.755 169.384 193.787 177.64 199.163 183.4C204.539 189.16 210.587 193.288 217.307 195.784C224.027 198.088 232.091 199.24 241.499 199.24C258.779 199.24 272.507 195.592 282.683 188.296C292.859 180.808 297.947 172.84 297.947 164.392V115.72H262.523V107.08H308.315V161.512C308.315 174.376 302.459 185.32 290.747 194.344C279.227 203.368 262.811 207.88 241.499 207.88C217.883 207.88 200.795 200.68 190.235 186.28C179.675 171.688 174.395 149.032 174.395 118.312V90.088C174.395 59.368 179.675 36.808 190.235 22.408C200.795 7.81599 217.883 0.519989 241.499 0.519989C260.507 0.519989 274.715 4.07199 284.123 11.176C293.531 18.088 300.827 27.976 306.011 40.84L297.947 44.008Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="content">
+            <ul class="icons-list">
+              <li class="icons-list-item tooltip-p">
+                <a class="dot">
+                  <i class="bi bi-house-door-fill"></i>
+                </a>
+                <div class="right">
+                  <span>Home</span>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icons-list-item tooltip-p">
+                <a class="dot">
+                  <i class="bi bi-briefcase-fill"></i>
+                </a>
+                <div class="right">
+                  <span>Portfolio</span>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icons-list-item tooltip-p">
+                <a class="dot">
+                  <i class="bi bi-file-earmark-pdf-fill"></i>
+                </a>
+                <div class="right">
+                  <span>About</span>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icons-list-item tooltip-p">
+                <a class="dot">
+                  <i class="bi bi-ui-checks"></i>
+                </a>
+                <div class="right">
+                  <span>Resume</span>
+                  <i></i>
+                </div>
+              </li>
+              <li class="icons-list-item tooltip-p">
+                <a class="dot">
+                  <i class="bi bi-telephone-fill"></i>
+                </a>
+                <div class="right">
+                  <span>Contact</span>
+                  <i></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="social-links">
+            <h6 class="social-icon"><i class="bi bi-person-lines-fill"></i></h6>
+            <div class="links">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.facebook.com/ahmedgemy0330/"
+                    arget="_blank"
+                  >
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="meshoinc2017@gmai.com" arget="_blank">
+                    <i class="bi bi-google"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.github.com/gemyhex" arget="_blank">
+                    <i class="bi bi-github"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/ahmed-m-gamal-946655160/"
+                    arget="_blank"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://wa.me/+201128514199" arget="_blank">
+                    <i class="bi bi-whatsapp"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="pages-wrapper">
+          <div class="slide-bar-mini">
+            <div class="logo">
+              <a href="index.html">
+                <svg
+                  width="309"
+                  height="208"
+                  viewBox="0 0 309 208"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M28.696 196.36H134.68L73.624 28.456L9.4 205H0.184L73.624 3.11199L147.064 205H28.696V196.36ZM297.947 44.008C293.531 32.872 287.291 24.328 279.227 18.376C271.163 12.232 258.587 9.16 241.499 9.16C232.091 9.16 224.027 10.408 217.307 12.904C210.587 15.208 204.539 19.24 199.163 25C193.787 30.76 189.755 39.112 187.067 50.056C184.379 60.808 183.035 74.152 183.035 90.088V118.312C183.035 134.248 184.379 147.688 187.067 158.632C189.755 169.384 193.787 177.64 199.163 183.4C204.539 189.16 210.587 193.288 217.307 195.784C224.027 198.088 232.091 199.24 241.499 199.24C258.779 199.24 272.507 195.592 282.683 188.296C292.859 180.808 297.947 172.84 297.947 164.392V115.72H262.523V107.08H308.315V161.512C308.315 174.376 302.459 185.32 290.747 194.344C279.227 203.368 262.811 207.88 241.499 207.88C217.883 207.88 200.795 200.68 190.235 186.28C179.675 171.688 174.395 149.032 174.395 118.312V90.088C174.395 59.368 179.675 36.808 190.235 22.408C200.795 7.81599 217.883 0.519989 241.499 0.519989C260.507 0.519989 274.715 4.07199 284.123 11.176C293.531 18.088 300.827 27.976 306.011 40.84L297.947 44.008Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="menu">
+              <button id="btn-menu"><i class="bi bi-list"></i></button>
+            </div>
+          </div>
+          <div class="overlay-menu">
+            <div class="slide-bar-menu">
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <p class="dot">Home</p>
+                </li>
+                <li class="menu-item">
+                  <p class="dot">Portfolio</p>
+                </li>
+                <li class="menu-item">
+                  <p class="dot">About</p>
+                </li>
+                <li class="menu-item">
+                  <p class="dot">Resume</p>
+                </li>
+                <li class="menu-item">
+                  <p class="dot">Contact</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="overlay-frame">
+            <div class="open-page">
+              <a href="" target="_blank">
+                <i class="fas fa-expand"></i>
+              </a>
+            </div>
+            <div class="close-frame">
+              <a href="" target="_blank">
+                <i class="fas fa-times"></i>
+              </a>
+            </div>
+            <div class="iframe-preview">
+              <iframe src="" frameborder="0"></iframe>
+            </div>
+          </div>
+          <div class="swipper container">
+            <div class="pageTab">
+              <div class="row">
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                  <div class="date">
+                    <h3 class="date-show">
+                      <span></span>
+                    </h3>
+                    <div class="clock">
+                      <div class="block" data-num="0"></div>
+                      <div class="block" data-num="1"></div>
+                      <div class="block" data-num="2"></div>
+                      <div class="block" data-num="3"></div>
+                      <div class="block" data-num="4"></div>
+                      <div class="block" data-num="5"></div>
+                      <div class="block" data-num="6"></div>
+                      <div class="block" data-num="7"></div>
+                      <div class="block" data-num="8"></div>
+                      <div class="block" data-num="9"></div>
+                      <div class="block" data-num="10"></div>
+                      <div class="block" data-num="11"></div>
+                      <div class="block" data-num="12"></div>
+                      <div class="block" data-num="13"></div>
+                      <div class="block" data-num="14"></div>
+                      <div class="block" data-num="15"></div>
+                      <div class="block" data-num="16"></div>
+                      <div class="block" data-num="17"></div>
+                      <div class="block" data-num="18"></div>
+                      <div class="block" data-num="19"></div>
+                      <div class="block" data-num="20"></div>
+                      <div class="block" data-num="21"></div>
+                      <div class="block" data-num="22"></div>
+                      <div class="block" data-num="23"></div>
+                      <div class="block" data-num="24"></div>
+                      <div class="block" data-num="25"></div>
+                      <div class="block" data-num="26"></div>
+                      <div class="block" data-num="27"></div>
+                      <div class="block" data-num="28"></div>
+                      <div class="block" data-num="29"></div>
+                      <div class="block" data-num="30"></div>
+                      <div class="block" data-num="31"></div>
+                      <div class="block" data-num="32"></div>
+                      <div class="block" data-num="33"></div>
+                      <div class="block" data-num="34"></div>
+                      <div class="block" data-num="35"></div>
+                      <div class="block" data-num="36"></div>
+                      <div class="block" data-num="37"></div>
+                      <div class="block" data-num="38"></div>
+                      <div class="block" data-num="39"></div>
+                      <div class="block" data-num="40"></div>
+                      <div class="block" data-num="41"></div>
+                      <div class="block" data-num="42"></div>
+                      <div class="block" data-num="43"></div>
+                      <div class="block" data-num="44"></div>
+                      <div class="block" data-num="45"></div>
+                      <div class="block" data-num="46"></div>
+                      <div class="block" data-num="47"></div>
+                      <div class="block" data-num="48"></div>
+                      <div class="block" data-num="49"></div>
+                      <div class="block" data-num="50"></div>
+                      <div class="block" data-num="51"></div>
+                      <div class="block" data-num="52"></div>
+                      <div class="block" data-num="53"></div>
+                      <div class="block" data-num="54"></div>
+                      <div class="block" data-num="55"></div>
+                      <div class="block" data-num="56"></div>
+                      <div class="block" data-num="57"></div>
+                      <div class="block" data-num="58"></div>
+                      <div class="block" data-num="59"></div>
+                      <div class="divider"></div>
+                    </div>
+                  </div>
+                  <div class="heading">
+                    <h4>WELCOME TO I’M AHMED GAMAL PORTFOLIO</h4>
+                  </div>
+                  <div class="wisdom">
+                    <p>
+                      <span id="coding">Coding</span>
+                      Makes Me enthusiastic.
+                      <span id="emoji"><img src="passion.png" alt="" /></span>
+                    </p>
+                  </div>
+                  <div class="profession">
+                    <p>
+                      i'm a front end developer with 2 years experience. I love
+                      creating and manipulating web pages with different
+                      technologies.
+                    </p>
+                  </div>
+                  <div class="flip">
+                    <a download="" href="CV_GEMY.pdf" class="down-resume">
+                      <div class="front">Download CV</div>
+                      <div class="back">
+                        <i class="bi bi-file-earmark-arrow-down-fill"></i>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                  <div class="photo">
+                    <img src="gemy.png" alt="" />
+                    <div class="overlay"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pageTab">
+              <div class="row">
+                <div class="col-12 heading">
+                  <h2>Portfolio</h2>
+                  <div class="row projects mt-5">
+                    <div class="col-12">
+                      <blockquote>
+                        <q>
+                          More Projects Under Updating and Maintenance Not All
+                          Projects Uploaded.
+                        </q>
+                      </blockquote>
+                      <blockquote>
+                        <q>
+                          <strong>Note:</strong>
+                          if my work may not get your attention i have more of
+                          passion and creative to unleash but i just want a
+                          chance.
+                        </q>
+                      </blockquote>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pj-item mt-5">
+                      <div class="link-item">
+                        <a href="https://digiflex.netlify.app/">
+                          <img src="digiflex.PNG" alt="" />
+                        </a>
+                      </div>
+                      <div class="desc">
+                        <h3>Digiflex</h3>
+                        <q>Movies Website.</q>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pj-item mt-5">
+                      <div class="link-item">
+                        <a href="https://gemyhex.github.io/Foody-Resturant/">
+                          <img src="food.PNG" alt="" />
+                        </a>
+                      </div>
+                      <div class="desc">
+                        <h3>Foody</h3>
+                        <q>Food Delivery Website.</q>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pj-item mt-5">
+                      <div class="link-item">
+                        <a href="https://gemyhex.github.io/APT-PRO/">
+                          <img src="apt.PNG" alt="" />
+                        </a>
+                      </div>
+                      <div class="desc">
+                        <h3>APT Gym</h3>
+                        <q>Gym Website.</q>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pj-item mt-5">
+                      <div class="link-item">
+                        <a href="https://gemyhex.github.io/Zadna_Pj/">
+                          <img src="zadna.PNG" alt="" />
+                        </a>
+                      </div>
+                      <div class="desc">
+                        <h3>Zadna</h3>
+                        <q>Dates Farm Website.</q>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pj-item mt-5">
+                      <div class="link-item">
+                        <a href="https://vue-firebase-1e097.web.app/chatroom">
+                          <img src="chat.PNG" alt="" />
+                        </a>
+                      </div>
+                      <div class="desc">
+                        <h3>Live Chat App</h3>
+                        <q>General Chat Website.</q>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pj-item mt-5">
+                      <div class="link-item">
+                        <a>
+                          <img src="help me.PNG" alt="" />
+                        </a>
+                      </div>
+                      <div class="desc">
+                        <h3>Help me</h3>
+                        <q>Private Educational Website.</q>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pageTab">
+              <div class="row">
+                <div class="col-12 heading">
+                  <h2>About</h2>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-lg-5 col-md-12 col-sm-12 image">
+                      <div class="personal">
+                        <img src="gemy.png" alt="" />
+                        <div id="borderLeft"></div>
+                        <div id="borderTop"></div>
+                        <div id="borderRight"></div>
+                        <div id="borderBottom"></div>
+                      </div>
+                    </div>
+                    <div class="col-lg-7 col-md-12 col-sm-12 info">
+                      <div class="name">
+                        <span>&boxbox;</span>
+                        <h3>I’M AHMED GAMAL</h3>
+                        <span>&boxbox;</span>
+                      </div>
+                      <div class="qoutes">
+                        <blockquote>
+                          <q>
+                            i am an junior front-end developer with working
+                            knowledge of Web Design and Development.
+                          </q>
+                        </blockquote>
+                        <blockquote>
+                          <q>
+                            I have worked extensively with a range of Web
+                            technologies.
+                          </q>
+                        </blockquote>
+                        <blockquote>
+                          <q>
+                            My personal experience includes creating, developing
+                            web pages by different programming languages with
+                            responsive design.
+                          </q>
+                        </blockquote>
+                      </div>
+                      <div class="lists">
+                        <ul class="pers">
+                          <li>
+                            <span>
+                              <i class="fa-solid fa-id-card"></i>
+                            </span>
+                            Name : Ahmed Gamal
+                          </li>
+                          <li>
+                            <span>
+                              <i class="fa-solid fa-location-dot"></i>
+                            </span>
+                            Location : Benha , Qualyoubia , Egypt
+                          </li>
+                          <li>
+                            <span>
+                              <i class="fa-solid fa-envelope-open-text"></i>
+                            </span>
+                            Mail : meshoinc2017@gmail.com
+                          </li>
+                        </ul>
+                        <ul class="pers">
+                          <li>
+                            <span>
+                              <i class="fa-solid fa-calendar-check"></i>
+                            </span>
+                            Date of Birth : 25 / 12 / 1997
+                          </li>
+                          <li>
+                            <span>
+                              <i class="fa-solid fa-graduation-cap"></i>
+                            </span>
+                            Degree : Bachelor of Computer Science
+                          </li>
+                          <li>
+                            <span>
+                              <i class="bi bi-telephone-fill"></i>
+                            </span>
+                            Phone : +201128514199
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="social mt-5">
+                        <ul>
+                          <li>
+                            <a
+                              href="https://www.facebook.com/ahmedgemy0330/"
+                              target="_blank"
+                            >
+                              <i class="bi bi-facebook"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://www.github.com/gemyhex"
+                              target="_blank"
+                            >
+                              <i class="bi bi-github"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              target="_blank"
+                              href="https://www.linkedin.com/in/ahmed-m-gamal-946655160/"
+                            >
+                              <i class="bi bi-linkedin"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="https://wa.me/+201128514199"
+                              target="_blank"
+                            >
+                              <i class="bi bi-whatsapp"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="movie-btn">
+                              Play <i class="fa-regular fa-circle-play"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="flip">
+                        <a download="" href="CV_GEMY.pdf" class="down-resume">
+                          <div class="front">Download CV</div>
+                          <div class="back">
+                            <i class="bi bi-file-earmark-arrow-down-fill"></i>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pageTab">
+              <div class="row">
+                <div class="col-12 heading">
+                  <h2>Education & Experiences</h2>
+                </div>
+                <div class="col-12 mt-5">
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button
+                          class="accordion-button"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          Experience
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-6 card mt-4">
+                              <div class="icon">
+                                <i class="fa-brands fa-html5"></i>
+                                <span>HTML5</span>
+                                <div class="progress mt-5">
+                                  <div
+                                    class="progress-bar"
+                                    role="progressbar"
+                                    style="width: 90%"
+                                    aria-valuenow="90"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  >
+                                    <span>90%</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 card mt-4">
+                              <div class="icon">
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <span>CSS3</span>
+                                <div class="progress mt-5">
+                                  <div
+                                    class="progress-bar"
+                                    role="progressbar"
+                                    style="width: 90%"
+                                    aria-valuenow="90"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  >
+                                    <span>90%</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 card mt-4">
+                              <div class="icon">
+                                <i class="fa-brands fa-js"></i>
+                                <span>Javascript</span>
+                                <div class="progress mt-5">
+                                  <div
+                                    class="progress-bar"
+                                    role="progressbar"
+                                    style="width: 70%"
+                                    aria-valuenow="70"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  >
+                                    <span>70%</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 card mt-4">
+                              <div class="icon">
+                                <i class="fa-brands fa-js-square"></i>
+                                <span>jquery</span>
+                                <div class="progress mt-5">
+                                  <div
+                                    class="progress-bar"
+                                    role="progressbar"
+                                    style="width: 70%"
+                                    aria-valuenow="90"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  >
+                                    <span>70%</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 card mt-4">
+                              <div class="icon">
+                                <i class="fa-brands fa-bootstrap"></i>
+                                <span>bootstrap</span>
+                                <div class="progress mt-5">
+                                  <div
+                                    class="progress-bar"
+                                    role="progressbar"
+                                    style="width: 90%"
+                                    aria-valuenow="90"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  >
+                                    <span>90%</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 card mt-4">
+                              <div class="icon">
+                                <i class="fa-brands fa-sass"></i>
+                                <span>sass&Backslash;scss</span>
+                                <div class="progress mt-5">
+                                  <div
+                                    class="progress-bar"
+                                    role="progressbar"
+                                    style="width: 90%"
+                                    aria-valuenow="90"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  >
+                                    <span>90%</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 card mt-4">
+                              <div class="icon">
+                                <i class="fa-brands fa-gulp"></i>
+                                <span>gulp.js</span>
+                                <div class="progress mt-5">
+                                  <div
+                                    class="progress-bar"
+                                    role="progressbar"
+                                    style="width: 80%"
+                                    aria-valuenow="80"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  >
+                                    <span>80%</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 card mt-4">
+                              <div class="icon">
+                                <i class="fa-solid fa-p"></i>
+                                <span>pug.js</span>
+                                <div class="progress mt-5">
+                                  <div
+                                    class="progress-bar"
+                                    role="progressbar"
+                                    style="width: 70%"
+                                    aria-valuenow="70"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  >
+                                    <span>70%</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 card mt-4">
+                              <div class="icon">
+                                <i class="fa-brands fa-js-square"></i>
+                                <span>Ajax &Backslash; json</span>
+                                <div class="progress mt-5">
+                                  <div
+                                    class="progress-bar"
+                                    role="progressbar"
+                                    style="width: 70%"
+                                    aria-valuenow="70"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  >
+                                    <span>70%</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 card mt-4">
+                              <div class="icon">
+                                <i class="fa-brands fa-vuejs"></i>
+                                <span>Vue.js</span>
+                                <div class="progress mt-5">
+                                  <div
+                                    class="progress-bar"
+                                    role="progressbar"
+                                    style="width: 70%"
+                                    aria-valuenow="70"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  >
+                                    <span>70%</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 card mt-4">
+                              <div class="icon">
+                                <i class="fa-brands fa-github-square"></i>
+                                <span>git &Backslash; github</span>
+                                <div class="progress mt-5">
+                                  <div
+                                    class="progress-bar"
+                                    role="progressbar"
+                                    style="width: 80%"
+                                    aria-valuenow="80"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  >
+                                    <span>80%</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 card mt-4">
+                              <div class="icon">
+                                <i class="fa-solid fa-database"></i>
+                                <span>firebase</span>
+                                <div class="progress mt-5">
+                                  <div
+                                    class="progress-bar"
+                                    role="progressbar"
+                                    style="width: 70%"
+                                    aria-valuenow="70"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                  >
+                                    <span>70%</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item mt-3">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          Education
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-6 card mt-4">
+                              <div class="icon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <span>Computer Science</span>
+                                <p>&starf; October 6 University &starf;</p>
+                                <q>Sept, 2016 - Feb, 2021</q>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 card mt-4">
+                              <div class="icon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <span>Front end Course</span>
+                                <p>&starf; Udemy &starf;</p>
+                                <q>Nov, 2019 - Mar, 2020</q>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 card mt-4">
+                              <div class="icon">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <span>Front end Bootcamp</span>
+                                <p>&starf; Udemy &starf;</p>
+                                <q>Apr, 2020 - Aug, 2020</q>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item mt-3">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          Work History
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-6 card mt-4">
+                              <div class="icon">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <span>Front end Developer</span>
+                                <p>&starf; Internship &starf;</p>
+                                <p>&dash; DST &Backslash; Hurgada &dash;</p>
+                                <p></p>
+                                <q>Jul, 2020 - Dec, 2020</q>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 card mt-4">
+                              <div class="icon">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <span>Front end Developer</span>
+                                <p>&starf; Part-time &starf;</p>
+                                <p>
+                                  &dash; Mirage Code &Backslash; Tanta &dash;
+                                </p>
+                                <p></p>
+                                <q>Jan, 2021 - Apr, 2021</q>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 card mt-4">
+                              <div class="icon">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <span>Front end Developer</span>
+                                <p>&starf; Full-time &starf;</p>
+                                <p>
+                                  &dash; Quantum &Backslash; Nasr City &dash;
+                                </p>
+                                <p></p>
+                                <q>Feb, 2021 - Oct, 2021</q>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pageTab">
+              <div class="contact-me">
+                <div class="row">
+                  <div class="col-12 heading">
+                    <h2>Contact Me</h2>
+                  </div>
+                  <div class="col-12 mt-5">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6 col-sm-6 card mt-4">
+                        <div class="icon">
+                          <i class="bi bi-telephone-fill"></i>
+                          <span>Phone:</span>
+                          <p>&starf; +201128514199 &starf;</p>
+                          <q>call &amp;&amp; whats app.</q>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-6 card mt-4">
+                        <div class="icon">
+                          <i class="bi bi-envelope-fill"></i>
+                          <span>Mail:</span>
+                          <p>&starf; meshoinc2017@gmail.com &starf;</p>
+                          <q>always available.</q>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-6 card mt-4">
+                        <div class="icon">
+                          <i class="bi bi-geo-alt-fill"></i>
+                          <span>Location:</span>
+                          <p>&starf; Benha , Qualyoubia , Egypt &starf;</p>
+                          <q>always nearby.</q>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

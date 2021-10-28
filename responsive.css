@@ -1,0 +1,231 @@
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .pageTab .image {
+        height: 470px;
+    }
+
+    .pageTab .card .icon p {
+        font-size: 1.2rem !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .overlay-menu {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .flip {
+        display        : flex;
+        justify-content: center;
+    }
+
+    .pageTab .personal {
+        width : 50% !important;
+        margin: auto;
+    }
+
+    .pageTab .info .name {
+        justify-content: center !important;
+    }
+
+    #borderLeft,
+    #borderRight,
+    #borderTop,
+    #borderBottom {
+        display: none;
+    }
+
+    .profession {
+        text-align: center;
+    }
+
+    .profession p {
+        width : 70% !important;
+        margin: auto;
+    }
+
+    .swipper .row>div {
+        text-align: center;
+    }
+
+    .swipper .row {
+        display        : flex;
+        justify-content: center;
+    }
+
+    .swipper .pageTab:nth-child(1) .row {
+        flex-direction: column-reverse;
+    }
+
+    .clock {
+        margin: auto;
+    }
+
+    .swipper .row .photo {
+        width : 40%;
+        margin: 20px auto;
+    }
+
+    .wisdom {
+        width : 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .pages-wrapper {
+        width: 100% !important;
+    }
+
+    .wrapper .side-bar {
+        display: none;
+    }
+
+    .wrapper .pages-wrapper .slide-bar-mini {
+        display           : flex;
+        justify-content   : space-between;
+        align-items       : center;
+        /* padding        : 0 10%; */
+    }
+
+    .swipper .row {
+        display        : flex;
+        justify-content: center;
+    }
+
+    .swipper {
+        padding: 0 !important;
+    }
+
+    .swipper .pageTab:nth-child(1) .row {
+        flex-direction: column-reverse;
+    }
+
+    .pageTab .card .icon {
+        width  : 100% !important;
+        padding: 30px 10px !important;
+    }
+
+    .pageTab .heading {
+        margin-top: 5rem;
+    }
+
+    .pageTab .row {
+        padding: 30px 0;
+    }
+
+    .swipper .row>div {
+        text-align: center;
+    }
+
+    .swipper .container {
+        padding: 0;
+    }
+
+    .swipper .row .photo {
+        width : 40%;
+        margin: 20px auto;
+    }
+
+    .profession p {
+        width : 80% !important;
+        margin: auto;
+    }
+
+    .clock {
+        margin: auto;
+    }
+
+    .flip {
+        display        : flex;
+        justify-content: center;
+    }
+
+    .pageTab .info .lists {
+        text-align: left !important;
+    }
+
+    .pageTab .info .name {
+        justify-content: center !important;
+    }
+
+    .pageTab .personal {
+        width : 50% !important;
+        margin: auto;
+    }
+
+    #borderLeft,
+    #borderRight,
+    #borderTop,
+    #borderBottom {
+        display: none;
+    }
+
+    .pageTab .info .social ul {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .wisdom p {
+        font-size: 4rem !important;
+    }
+
+    .wisdom p span {
+        font-size: 4.5rem !important;
+    }
+
+    .profession p {
+        font-size: 1rem !important;
+    }
+
+    .photo {
+        width: 60% !important;
+    }
+
+    .clock {
+        display: none !important;
+    }
+
+    .pageTab .info .lists {
+        display       : flex;
+        flex-direction: column;
+    }
+
+    .iframe-preview {
+        display: none !important;
+    }
+
+    a.close-frame {
+        right: 45% !important;
+    }
+
+    a.open-page {
+        left: 45% !important;
+    }
+}
+
+@media screen and (max-width: 476px) {
+    .slide-bar-menu {
+        animation: fullSlide 0.2s forwards alternate !important;
+    }
+
+    .wisdom p #emoji img {
+        width: 30px !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .wisdom p {
+        font-size: 2rem !important;
+    }
+
+    .wisdom p span {
+        font-size: 2.2rem !important;
+    }
+
+    .profession p {
+        font-size: 1rem !important;
+    }
+}

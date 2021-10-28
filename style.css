@@ -1,0 +1,1178 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* General CSS */
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+    outline   : none;
+}
+
+html,
+body {
+    min-height     : 100vh;
+    font-family    : 'Poppins', sans-serif !important;
+    margin         : 0;
+    padding        : 0;
+    scroll-behavior: smooth;
+}
+
+.page {
+    width           : 100%;
+    min-height      : 100vh;
+    position        : relative;
+    background-color: #03110C;
+}
+
+.wrapper {
+    width     : 100%;
+    min-height: 100vh;
+    display   : none !important;
+}
+
+.wrapper.show {
+    display: flex !important;
+}
+
+.wrapper .pages-wrapper {
+    position  : relative;
+    width     : calc(100% - 160px);
+    margin    : auto;
+    min-height: inherit;
+}
+
+/* End General CSS */
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background   : #008053;
+    border-radius: 8px;
+}
+
+/* End Scrollbar */
+
+/* Clock CSS */
+
+.clock {
+    position : relative;
+    display  : flex;
+    flex-flow: column wrap;
+    width    : 40%;
+    height   : 70px;
+}
+
+.block {
+    width     : calc(100% / 12);
+    height    : 20%;
+    color     : #2221213b;
+    transition: 0.4s;
+}
+
+.block:not(:nth-child(n+16)):nth-child(n+11),
+.block:not(:nth-child(n+46)):nth-child(n+41) {
+    margin-right: 10px;
+}
+
+.block:not(:nth-child(n+31)):nth-child(n+26) {
+    margin-right: 20px;
+}
+
+.block:before {
+    content    : attr(data-num);
+    position   : relative;
+    display    : block;
+    font-size  : 12px;
+    width      : 100%;
+    height     : 100%;
+    line-height: 20px;
+    text-align : center;
+}
+
+.block:nth-child(-n+10):before {
+    content: "0"attr(data-num);
+}
+
+.block.active:before {
+    color      : whitesmoke;
+    font-weight: 700;
+}
+
+.block.second:before {
+    color: #009E66;
+}
+
+.divider {
+    position        : absolute;
+    width           : 2px;
+    background-color: whitesmoke;
+    height          : 60%;
+    top             : 20%;
+    left            : calc(50% + 19px);
+}
+
+/* End Clock CSS */
+
+/* Pre Loader CSS */
+.loader {
+    width           : 100vw;
+    height          : 100vh;
+    background-color: #03110C;
+}
+
+.loader-hide {
+    animation: loader-hide 2s forwards;
+}
+
+#logo {
+    max-width: calc(100vw);
+    width    : 80%;
+    margin   : auto;
+    position : absolute;
+    top      : 50%;
+    left     : -50%;
+    transform: translate(-50%, -50%);
+    animation: logo-moving 2s forwards, logo-fill 0.5s forwards 4.5s, spotlight 5s forwards 5s;
+}
+
+#logo path:nth-child(1) {
+    stroke-dasharray : 2285;
+    stroke-dashoffset: 2285;
+    animation        : logo-animate 3s ease forwards 0.3s;
+}
+
+#logo path:nth-child(2) {
+    stroke-dasharray : 564;
+    stroke-dashoffset: 564;
+    animation        : logo-animate 3s ease forwards 0.6s;
+}
+
+#logo path:nth-child(3) {
+    stroke-dasharray : 1341;
+    stroke-dashoffset: 1341;
+    animation        : logo-animate 3s ease forwards 0.9s;
+}
+
+#logo path:nth-child(4) {
+    stroke-dasharray : 1341;
+    stroke-dashoffset: 1341;
+    animation        : logo-animate 3s ease forwards 1.2s;
+}
+
+#logo path:nth-child(5) {
+    stroke-dasharray : 2191;
+    stroke-dashoffset: 2191;
+    animation        : logo-animate 3s ease forwards 1.5s;
+}
+
+/* End Pre-loader CSS */
+
+/* Side Bar CSS */
+.side-bar {
+    background-color: #000;
+    width           : 80px;
+    height          : 100vh;
+    position        : fixed;
+    z-index         : 9999;
+}
+
+.side-bar .logo {
+    background-color: #009E66;
+    width           : 100%;
+    height          : 80px;
+    display         : flex;
+    justify-content : center;
+}
+
+.side-bar .logo a {
+    width          : 100%;
+    height         : 100%;
+    display        : flex;
+    justify-content: center;
+}
+
+.side-bar .logo a svg {
+    width : 60%;
+    height: 100%;
+}
+
+.side-bar .logo path {
+    stroke-dasharray : 1690;
+    stroke-dashoffset: 1690;
+}
+
+.slide-bar-mini {
+    width          : 100vw;
+    height         : 50px;
+    justify-content: space-around;
+    display        : none;
+    background     : #fff;
+    position       : fixed;
+    z-index        : 9999;
+}
+
+.slide-bar-mini .logo {
+    background-color: #009E66;
+    width           : 100px;
+    height          : 50px;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+}
+
+.slide-bar-mini .logo a {
+    width : 80px;
+    height: 40px;
+}
+
+.slide-bar-mini .logo a svg {
+    width : 100%;
+    height: 100%;
+}
+
+.slide-bar-mini .logo path {
+    stroke-dasharray : 1690;
+    stroke-dashoffset: 1690;
+}
+
+.slide-bar-mini .menu button {
+    background: transparent;
+    border    : 0;
+}
+
+.slide-bar-mini .menu button i {
+    font-size: 2.8rem;
+    color    : #009E66;
+}
+
+.slide-bar-menu {
+    position  : relative;
+    width     : 0;
+    height    : 100%;
+    background: #fff;
+    overflow  : hidden;
+    display   : flex;
+}
+
+.slide-bar-menu .menu-list {
+    width       : 100%;
+    list-style  : none;
+    padding-left: 0;
+}
+
+.slide-bar-menu .menu-list li {
+    width     : 100%;
+    text-align: center;
+}
+
+.slide-bar-menu .menu-list li p {
+    padding      : 12px 0;
+    color        : black;
+    margin-bottom: 0;
+}
+
+.slide-bar-menu .menu-list li p.active {
+    background: #6CC254;
+    color     : white;
+}
+
+.overlay-menu {
+    position  : fixed;
+    width     : 100%;
+    height    : calc(100% - 50px);
+    top       : 50px;
+    left      : 0;
+    background: rgba(41, 41, 41, 0.8);
+    visibility: visible;
+    z-index   : 999;
+    display   : none;
+}
+
+.overlay-menu.open {
+    display: block;
+}
+
+.slide-bar-menu.open {
+    animation: show-sideMenu 0.2s ease-in-out forwards alternate;
+}
+
+.content {
+    width      : 100%;
+    min-height : calc(100% - 160px);
+    padding-top: 60px;
+    position   : relative;
+}
+
+.content .icons-list {
+    width          : 100%;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    padding-left   : 0;
+    position       : absolute;
+    top            : 50%;
+    left           : 50%;
+    transform      : translate(-50%, -50%);
+}
+
+.content .icons-list li {
+    width    : 100%;
+    font-size: 1.7rem;
+}
+
+.content .icons-list li a {
+    width          : 100%;
+    padding        : 15px 0px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    color          : white;
+}
+
+.content .icons-list li a:hover {
+    color           : #009E66;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.content .icons-list li a:hover i {
+    animation: rotate-icon 1s ease-in-out infinite;
+}
+
+.content .icons-list li a.active {
+    color: #009E66;
+}
+
+.social-links {
+    width           : 100%;
+    height          : 80px;
+    background-color: #009E66;
+    cursor          : pointer;
+}
+
+.social-links:hover .links {
+    animation: fade-social 0.2s ease forwards;
+}
+
+.social-links {
+    width           : 100%;
+    height          : 80px;
+    background-color: #009E66;
+    cursor          : pointer;
+}
+
+.social-links h6 {
+    text-align     : center;
+    color          : #fff;
+    font-size      : 2rem;
+    /* font-weight : bold; */
+    line-height    : 80px;
+}
+
+.social-links .links {
+    background-color          : transparent;
+    width                     : 0;
+    height                    : 80px;
+    display                   : flex;
+    justify-content           : center;
+    align-items               : center;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius   : 50px;
+    position                  : absolute;
+    bottom                    : 0;
+    left                      : 77px;
+    overflow                  : hidden;
+}
+
+.social-links .links ul {
+    width          : 100%;
+    list-style     : none;
+    display        : flex;
+    margin-bottom  : 0;
+    padding-left   : 0;
+    justify-content: space-around;
+}
+
+.social-links .links ul li {
+    width          : 40px;
+    height         : 40px;
+    background     : #fff;
+    border-radius  : 50%;
+    padding        : 0 10px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.social-links .links ul li a {
+    color    : #000;
+    font-size: 1.5rem;
+}
+
+.social-links .links ul li:hover a {
+    color: #009E66;
+}
+
+.social-links .links ul li:hover {
+    animation: emoji-animate 0.3s infinite ease-in-out alternate;
+}
+
+/* End Sidebar CSS */
+
+/* Tooltip CSS */
+.tooltip-p {
+    display   : inline-block;
+    position  : relative;
+    text-align: left;
+}
+
+.tooltip-p .right {
+    min-width       : 100px;
+    max-height      : 35px;
+    top             : 50%;
+    left            : 100%;
+    margin-left     : 8px;
+    transform       : translate(0, -50%);
+    padding         : 10px 20px;
+    color           : #ffffff;
+    background-color: #009E66;
+    font-weight     : normal;
+    font-size       : 18px;
+    border-radius   : 8px;
+    position        : absolute;
+    z-index         : 99999999;
+    box-sizing      : border-box;
+    box-shadow      : 0 1px 8px rgba(0, 0, 0, 0.5);
+    display         : none;
+}
+
+.tooltip-p:hover .right {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.tooltip-p .right i {
+    position  : absolute;
+    top       : 50%;
+    right     : 100%;
+    margin-top: -12px;
+    width     : 12px;
+    height    : 24px;
+    overflow  : hidden;
+}
+
+.tooltip-p .right i::after {
+    content         : '';
+    position        : absolute;
+    width           : 12px;
+    height          : 12px;
+    left            : 0;
+    top             : 50%;
+    transform       : translate(50%, -50%) rotate(-45deg);
+    background-color: #009E66;
+    box-shadow      : 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* End Tooltip CSS */
+.swipper {
+    width     : calc(100% - 80px);
+    color     : #fff;
+    margin-top: 5%;
+    padding   : 0 5rem;
+}
+
+.date .date-show {
+    padding-bottom: 20px;
+    font-weight   : bold;
+}
+
+.date .date-show span {
+    width        : fit-content;
+    padding      : 0 20px;
+    border-bottom: 3px solid #009E66;
+}
+
+.heading h4 {
+    letter-spacing: 1px;
+    margin-top    : 40px;
+    width         : 100%;
+}
+
+.dot {
+    cursor: pointer;
+}
+
+.photo {
+    background:
+        linear-gradient(#03110C, #03110C) padding-box,
+        linear-gradient(to left, #303030, #03110C) border-box;
+    border-radius   : 50em;
+    border-top      : 0;
+    border          : 15px solid transparent;
+    border-top-width: 50%;
+}
+
+.overlay {
+    width   : 100%;
+    height  : 100%;
+    position: absolute;
+    top     : 0;
+    left    : 0;
+    z-index : 9999;
+}
+
+.overlay-mov {
+    width     : 100%;
+    height    : 100%;
+    position  : absolute;
+    top       : 0;
+    left      : 0;
+    z-index   : 9999;
+    display   : none;
+    background: rgba(46, 45, 45, 0.486);
+}
+
+.overlay-mov .movie {
+    max-height: 100vh;
+    max-width : 100vw;
+    width     : 700px;
+    height    : 400px;
+    margin    : auto;
+}
+
+.overlay-mov .movie video {
+    width : 100%;
+    height: 100%;
+}
+
+.overlay-mov.open {
+    display        : flex !important;
+    justify-content: center;
+    align-items    : center;
+}
+
+a.movie-btn {
+    cursor: pointer;
+}
+
+a.close-mov {
+    position : absolute;
+    color    : #fff;
+    z-index  : 9999;
+    top      : 5%;
+    right    : 10%;
+    font-size: 2.5rem;
+    cursor   : pointer;
+}
+
+.photo img {
+    max-width    : 100%;
+    width        : 100%;
+    height       : 100%;
+    max-height   : 100%;
+    border-radius: 50%;
+    box-shadow   : 0 0 20px 0 #303030 inset, 0 0 10px 10px #03110C;
+    box-shadow   : 0 0 40px 0 #494949 inset, 0 0 40px 20px #040f0b;
+}
+
+.wisdom p {
+    font-size     : 5rem;
+    font-weight   : bolder;
+    text-transform: uppercase;
+}
+
+.wisdom p span {
+    font-size: 5.5rem;
+    color    : #009E66;
+}
+
+.wisdom p #emoji {
+    height: fit-content;
+}
+
+.wisdom p #emoji img {
+    width    : 60px;
+    animation: emoji-animate 1s infinite ease-in-out alternate;
+}
+
+.profession p {
+    text-transform: uppercase;
+    width         : 85%;
+    font-weight   : bold;
+    font-size     : 1.4rem;
+}
+
+/* Download Button Animation */
+.flip {
+    height             : 48px;
+    -webkit-perspective: 500px;
+    -moz-perspective   : 500px;
+    -ms-perspective    : 500px;
+    perspective        : 500px;
+    margin-top         : 40px;
+}
+
+.flip a {
+    font-weight            : 400;
+    text-transform         : uppercase;
+    margin                 : 0;
+    padding                : 0;
+    width                  : 210px;
+    height                 : 100%;
+    position               : absolute;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style   : preserve-3d;
+    -o-transform-style     : preserve-3d;
+    -ms-transform-style    : preserve-3d;
+    transform-style        : preserve-3d;
+    -webkit-transform      : translateZ(-25px);
+    -moz-transform         : translateZ(-25px);
+    -o-transform           : translateZ(-25px);
+    -ms-transform          : translateZ(-25px);
+    transform              : translateZ(-25px);
+    -webkit-transition     : -webkit-transform 0.3s;
+    -moz-transition        : -moz-transform 0.3s;
+    -o-transition          : -o-transform 0.3s;
+    -ms-transition         : -ms-transform 0.3s;
+    transition             : transform 0.3s;
+    cursor                 : pointer;
+}
+
+.flip a .front,
+.flip a .back {
+    margin        : 0;
+    width         : 200px;
+    height        : 48px;
+    line-height   : 48px;
+    position      : absolute;
+    text-align    : center;
+    letter-spacing: 0.4em;
+}
+
+.flip a .front {
+    background-color : #222;
+    color            : #fff;
+    -webkit-transform: rotateY(0) translateZ(24px);
+    -moz-transform   : rotateY(0) translateZ(24px);
+    -o-transform     : rotateY(0) translateZ(24px);
+    -ms-transform    : rotateY(0) translateZ(24px);
+    transform        : rotateY(0) translateZ(24px);
+}
+
+.flip a .back {
+    background-color : rgba(255, 255, 255, 0);
+    color            : rgba(34, 34, 34, 0);
+    -webkit-transform: rotateX(90deg) translateZ(24px);
+    -moz-transform   : rotateX(90deg) translateZ(24px);
+    -o-transform     : rotateX(90deg) translateZ(24px);
+    -ms-transform    : rotateX(90deg) translateZ(24px);
+    transform        : rotateX(90deg) translateZ(24px);
+    overflow         : hidden;
+}
+
+.flip a .back i {
+    font-size: 2rem;
+}
+
+.flip a .back:after {
+    content                 : '';
+    position                : absolute;
+    top                     : -32%;
+    left                    : -10%;
+    width                   : 120%;
+    height                  : 50%;
+    background              : #222;
+    -webkit-transform       : rotate(8deg);
+    -moz-transform          : rotate(8deg);
+    -o-transform            : rotate(8deg);
+    -ms-transform           : rotate(8deg);
+    transform               : rotate(8deg);
+    -webkit-transition      : all 0.5s ease;
+    -moz-transition         : all 0.5s ease;
+    -o-transition           : all 0.5s ease;
+    -ms-transition          : all 0.5s ease;
+    transition              : all 0.5s ease;
+    -webkit-transition-delay: 0.15s;
+    -moz-transition-delay   : 0.15s;
+    -o-transition-delay     : 0.15s;
+    -ms-transition-delay    : 0.15s;
+    transition-delay        : 0.15s;
+}
+
+.flip a:hover {
+    -webkit-transform: translateZ(-24px) rotateX(-90deg);
+    -moz-transform   : translateZ(-24px) rotateX(-90deg);
+    -o-transform     : translateZ(-24px) rotateX(-90deg);
+    -ms-transform    : translateZ(-24px) rotateX(-90deg);
+    transform        : translateZ(-24px) rotateX(-90deg);
+}
+
+.flip a:hover .front {
+    background        : #000;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition   : all 0.8s ease;
+    -o-transition     : all 0.8s ease;
+    -ms-transition    : all 0.8s ease;
+    transition        : all 0.8s ease;
+}
+
+.flip a:hover .back {
+    color             : #fff;
+    -webkit-transition: color 0.4s linear;
+    -moz-transition   : color 0.4s linear;
+    -o-transition     : color 0.4s linear;
+    -ms-transition    : color 0.4s linear;
+    transition        : color 0.4s linear;
+    background        : #009E66;
+}
+
+.flip a:hover .back:after {
+    -webkit-transform: rotate(6deg) translate(100px, -18px);
+    -moz-transform   : rotate(6deg) translate(100px, -18px);
+    -o-transform     : rotate(6deg) translate(100px, -18px);
+    -ms-transform    : rotate(6deg) translate(100px, -18px);
+    transform        : rotate(6deg) translate(100px, -18px);
+}
+
+/* End Download Button Animation */
+
+/* Contact Page CSS */
+.pageTab {
+    padding: 4rem 0;
+}
+
+.pageTab .heading h2 {
+    font-weight: bolder;
+    font-size  : 4rem;
+}
+
+.pageTab .card {
+    background: transparent;
+    border    : none;
+}
+
+.pageTab .card .icon {
+    width          : 90%;
+    margin         : auto;
+    display        : flex;
+    flex-direction : column;
+    font-size      : 2.3rem;
+    font-weight    : bold;
+    justify-content: center;
+    align-items    : center;
+    background     : #032217;
+    border-radius  : 5px;
+    padding        : 30px;
+}
+
+.pageTab .card .icon i {
+    color: #009E66;
+}
+
+.pageTab .card .icon span {
+    font-size     : 1.6rem;
+    margin-top    : 10px;
+    text-transform: uppercase;
+}
+
+.pageTab .card .icon p {
+    font-size  : 1.5rem;
+    margin-top : 10px;
+    font-weight: normal;
+}
+
+.pageTab .card .icon q {
+    font-size     : 1.5rem;
+    font-weight   : normal;
+    text-transform: uppercase;
+}
+
+.progress {
+    width        : 100%;
+    height       : 15px;
+    border-radius: 0;
+    background   : #03110C;
+    overflow     : visible;
+}
+
+.progress .progress-bar {
+    animation-name           : animateBar;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration       : .8s;
+    background-color         : #009E66;
+    position                 : relative;
+    overflow                 : visible;
+    border-radius            : 0px 50px 50px 0px;
+}
+
+.progress .progress-bar span {
+    background     : #fff;
+    color          : #000;
+    font-size      : 1.2rem !important;
+    margin-top     : 0 !important;
+    font-weight    : normal;
+    width          : 35px;
+    height         : 35px;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    border-radius  : 50%;
+    position       : absolute;
+    right          : 0;
+    box-shadow     : 0 0 20px #fff, 0 0 30px #009E66, 0 0 40px #008053, 0 0 50px #009E66, 0 0 60px #008053;
+}
+
+.pageTab .image {
+    position  : relative;
+    min-height: 100%;
+    padding   : 0 !important;
+}
+
+.pageTab .personal {
+    width     : 100%;
+    height    : 100%;
+    background: rgba(165, 165, 165, 0.2);
+}
+
+#borderLeft {
+    border-left: 5px solid #494949;
+    position   : absolute;
+    top        : 0%;
+    bottom     : 75%;
+    left       : 0.5%;
+}
+
+#borderTop {
+    border-top: 5px solid #494949;
+    position  : absolute;
+    top       : 0%;
+    right     : 75%;
+    left      : 0.5%;
+}
+
+#borderRight {
+    border-left: 5px solid #494949;
+    position   : absolute;
+    top        : 75%;
+    bottom     : 0%;
+    right      : 0.5%;
+}
+
+#borderBottom {
+    border-top: 5px solid #494949;
+    position  : absolute;
+    bottom    : 0%;
+    right     : 0.5%;
+    left      : 75%;
+}
+
+.pageTab .personal img {
+    width : 100%;
+    height: 100%;
+}
+
+.pageTab .info .name {
+    display        : flex;
+    justify-content: flex-start;
+    align-items    : center;
+    font-size      : 24px;
+}
+
+.pageTab .info .social ul {
+    width          : 70%;
+    display        : flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.pageTab .info .social ul li a {
+    padding        : 10px 15px;
+    border         : 1px solid #009E66;
+    color          : #009E66;
+    border-radius  : 3px;
+    font-size      : 2rem;
+    text-decoration: none;
+}
+
+.pageTab .info .social ul li a:hover {
+    background: #009E66;
+    color     : #fff;
+}
+
+.pageTab .info .name span {
+    font-size : 26px;
+    margin-top: 15px;
+}
+
+.pageTab .info h3 {
+    margin-right : 5px;
+    margin-left  : 5px;
+    border-bottom: 1px solid #fff;
+    border-top   : 1px solid #fff;
+    width        : fit-content;
+    padding      : 5px 0;
+}
+
+.pageTab .info blockquote {
+    text-transform: uppercase;
+    border-left   : 2px solid #009E66;
+    font-size     : 14px;
+}
+
+.pageTab .lists {
+    display      : flex;
+    border-bottom: 2px solid #009E66;
+}
+
+.pageTab .lists ul {
+    list-style: none;
+}
+
+.pageTab .lists ul li {
+    padding: 10px 5px;
+}
+
+.pageTab .lists ul li span {
+    color       : #009E66;
+    margin-right: 5px;
+}
+
+/* Accordion CSS */
+.accordion-item {
+    background: transparent;
+}
+
+.accordion-header {
+    margin-top: 0;
+    background: transparent;
+}
+
+.accordion-body {
+    background: rgb(0 81 52 / 78%);
+}
+
+.accordion-button {
+    padding         : 20px 20px;
+    font-size       : 2rem;
+    font-weight     : bold;
+    background-color: #009E66;
+    color           : #fff;
+}
+
+.accordion-button:not(.collapsed) {
+    padding         : 20px 20px;
+    font-size       : 2rem;
+    font-weight     : bold;
+    background-color: #009E66;
+    color           : #fff;
+}
+
+/* End Accordion CSS */
+
+/* Portfolio CSS */
+.projects {
+    position: relative;
+}
+
+.projects blockquote {
+    border-left-color: #009E66;
+}
+
+.pj-item {
+    padding: 0;
+
+}
+
+.pj-item .link-item {
+    width   : 90%;
+    height  : 80%;
+    margin  : auto;
+    overflow: hidden;
+}
+
+.pj-item .desc {
+    text-align: center;
+}
+
+.pj-item:hover .link-item {
+    border: 2px solid #009E66;
+}
+
+.iframe-preview {
+    width : 70%;
+    height: 500px;
+}
+
+.iframe-preview iframe {
+    width     : 100%;
+    height    : 100%;
+    margin-top: 5%;
+}
+
+.overlay-frame {
+    width     : 100%;
+    height    : 100%;
+    position  : absolute;
+    top       : 0;
+    left      : 0;
+    z-index   : 9999;
+    display   : none;
+    background: rgba(46, 45, 45, 0.486);
+}
+
+.overlay-frame.open {
+    display        : flex !important;
+    justify-content: center;
+}
+
+.close-frame a {
+    position : absolute;
+    color    : #fff;
+    z-index  : 9999;
+    top      : 5%;
+    right    : 10%;
+    font-size: 2.5rem;
+    cursor   : pointer;
+}
+
+.open-page a {
+    position : absolute;
+    color    : #fff;
+    z-index  : 9999;
+    top      : 5%;
+    left     : 10%;
+    font-size: 2.5rem;
+    cursor   : pointer;
+}
+
+.pj-item:hover img {
+    animation: scaleImg 0.5s alternate forwards;
+}
+
+.pj-item img {
+    width : 100%;
+    height: 100%;
+    filter: grayscale();
+}
+
+/* End Portfolio CSS */
+
+/* End Contact Page CSS */
+
+/* Animations */
+@keyframes scaleImg {
+    to {
+        transform: scale(1.1);
+        filter   : none;
+    }
+}
+
+@keyframes animateBar {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes up-down {
+    to {
+        transform:
+            translate3d(0px, -16px, 0px) rotateX(51deg) rotateZ(33deg);
+        box-shadow:
+            1px 1px 1px 1px #f9f9fb,
+            -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+            54px 54px 28px -10px rgba(34, 33, 81, 0.15);
+    }
+}
+
+@keyframes emoji-animate {
+
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes logo-moving {
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes logo-animate {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes logo-fill {
+    from {
+        fill: transparent;
+    }
+
+    to {
+        fill: white;
+    }
+}
+
+@keyframes spotlight {
+    0% {
+        clip-path: circle(100% at 50% 50%);
+    }
+
+    25% {
+        clip-path: circle(40% at 50% 50%);
+    }
+
+    50% {
+        clip-path: circle(20% at 12% 84%);
+    }
+
+    75% {
+        clip-path: circle(40% at 93% 51%);
+    }
+
+    100% {
+        clip-path: circle(20% at -30% 20%);
+    }
+}
+
+@keyframes fade-social {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 300px;
+    }
+}
+
+@keyframes rotate-icon {
+    to {
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+}
+
+@keyframes show-sideMenu {
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes fullSlide {
+    to {
+        width: 100%;
+    }
+}
