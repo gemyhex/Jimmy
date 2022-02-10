@@ -2,8 +2,8 @@ $(document).ready(() => {
   // Loader Hide after finish
   setTimeout(() => {
     $(".loader").fadeOut(1);
-    $(".loader").css("display" , "none");
-    $(".wrapper").addClass('show');
+    $(".loader").css("display", "none");
+    $(".wrapper").addClass("show");
   }, 9500);
 
   // Get Today's Date
@@ -135,14 +135,6 @@ $(document).ready(() => {
     slides[slideIndex].style.display = "block";
     dots[slideIndex].className += " active";
   }
-  //Dynamic Click
-  let moves = document.querySelectorAll(".icons-list-item .dot");
-  moves.forEach((move, i) => {
-    move.addEventListener("click", (e) => {
-      currentSlide(i);
-      //   $(e.target).toggleClass("active");
-    });
-  });
   //Dynamic Click Small
   let sMoves = document.querySelectorAll(".menu-item .dot");
   $(sMoves[0]).addClass("active");
@@ -150,6 +142,17 @@ $(document).ready(() => {
     smove.addEventListener("click", (e) => {
       currentSlide(i);
       $(e.target).toggleClass("active");
+      console.log("Cliked", i);
+    });
+  });
+
+  //Dynamic Click
+  let moves = document.querySelectorAll(".icons-list-item .dot");
+  moves.forEach((move, i) => {
+    move.addEventListener("click", (e) => {
+      currentSlide(i);
+      //   $(e.target).toggleClass("active");
+      console.log("Clicked", i);
     });
   });
 
