@@ -142,7 +142,6 @@ $(document).ready(() => {
     smove.addEventListener("click", (e) => {
       currentSlide(i);
       $(e.target).toggleClass("active");
-      console.log("Cliked", i);
     });
   });
 
@@ -151,8 +150,6 @@ $(document).ready(() => {
   moves.forEach((move, i) => {
     move.addEventListener("click", (e) => {
       currentSlide(i);
-      //   $(e.target).toggleClass("active");
-      console.log("Clicked", i);
     });
   });
 

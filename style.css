@@ -271,15 +271,16 @@ body {
 .slide-bar-menu .menu-list li {
     width     : 100%;
     text-align: center;
+    margin    : 1rem 0;
 }
 
-.slide-bar-menu .menu-list li p {
-    padding      : 12px 0;
-    color        : black;
-    margin-bottom: 0;
+.slide-bar-menu .menu-list li a {
+    padding: 12px 0;
+    color  : black;
+
 }
 
-.slide-bar-menu .menu-list li p.active {
+.slide-bar-menu .menu-list li a.active {
     background: #6CC254;
     color     : white;
 }
@@ -509,6 +510,10 @@ body {
 
 .dot {
     cursor: pointer;
+}
+
+.small_link {
+    text-decoration: none;
 }
 
 .photo {
